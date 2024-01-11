@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap');
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white-color: #FFFFFF;
+    --white-color2: #F2F9FE;
+    --gray-color: #909193;
+    --normal-black: #223344;
+    --dark-color: #111729;
+    --normal-green: #4CA154;
+    --blue-color:#2A4DD0;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    margin: 0 auto;
+    background: var(--white-color2);
+    font-family: 'Poppins';
+    
+}
+
+nav{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    
+}
+nav img{
+    height: 39px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: var(--gray-color);
+    font-weight: 500;
+    
+}
+.bar{
+    display: none;
+}
+
+.dark-color{
+    color: var(--normal-black);
+}
+.gray-color{
+    color: var(--gray-color);
+}
+
+.hero-containr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 40px auto;
+    flex-direction: row-reverse;
+    padding: 10px 0;
+    
+}
+.hero{
+    width: 48%;
+  
+}
+.hero img{
+    width: 100%;
+    height: auto;
+}
+.emoji{
+    font-weight: 700;
+}
+.text-items{
+    width: 48%;
+}
+h1{
+    font-size: 3.75rem;
+    font-weight: 900;
+    margin: 20px 0;
+}
+.para{
+    font-size: 1.125rem;
+}
+.done{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 10px;
+    
+}
+button{
+    padding: 20px 30px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 16px;
+    font-weight: 700;
+}
+
+.mark{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Responsive Styles */
+
+/* Small Device */
+@media screen and (max-width:640px){
+    nav ul{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    nav{
+        max-width: 100%;
+        margin: 10px 20px;
+    }
+    
+    .fill{
+        display: none;
+    }
+    .hero-containr{
+       flex-direction: column; 
+        
+    }
+    .hero{
+        width: 100%;
+        height: 500px;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Middle Size device */
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    .hero-containr{
+        flex-direction: column; 
+     }
+     .text-items{
+        width: 100%;
+     }
+     nav{
+        max-width: 95%;
+     }
+     .hero{
+        height: 450px;
+     }
+}
+
+
+
+
+
+
+
